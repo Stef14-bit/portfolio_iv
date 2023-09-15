@@ -4,7 +4,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <div className="bg-violet-600 w-full fixed flex items-center p-5">
+    <div className="bg-violet-600 w-full  flex items-center p-5">
       <ul className="w-full flex flex-row justify-around items-center">
         <li>title</li>
         <li>resume</li>
