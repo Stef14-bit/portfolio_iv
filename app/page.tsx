@@ -1,45 +1,66 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faJs } from "@fortawesome/free-brands-svg-icons";
-
 /* eslint-disable react/no-unescaped-entities */
+
+import mySkills from "@/skills";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function Home() {
   return (
     <div>
-      <div className="grid grid-cols-3 grid-rows-6">
-        <div className="col-span-3">
-          <h2 className="text-center font-light text-2xl my-5">About Me</h2>
-          <p className="text-sm text-center p-10 font-light">
-            Hello there! I'm an aspiring web developer with a boundless ambition
-            to learn and grow in the field. While I may lack experience, my
-            determination to become a respected and skilled web developer is
-            unwavering. My journey into web development is fueled by a genuine
-            passion for coding and a strong desire to create captivating online
-            experiences. I understand that the road ahead is challenging, with
-            ever-evolving technologies, but I'm ready to embrace the learning
-            curve. I see every obstacle as an opportunity for growth and am
-            committed to acquiring the necessary skills and staying updated with
-            the latest trends. My ambition and dedication are my driving forces,
-            propelling me towards my goal of becoming an accomplished web
-            developer. In summary, as a newcomer in web development, my ambition
-            and eagerness to learn are my strengths. I'm determined to make my
-            mark and am excited about the journey ahead.
-          </p>
-        </div>
-        <div className="col-span-3 row-span-3 col-start-1 row-start-4 bg-red-600">
-          Projects
-        </div>
-        <div className="row-span-2 col-start-1 row-start-2 bg-lime-700">
+      <section className="p-5 bg-gray-100">
+        <h2 className="text-center font-light text-2xl my-10">About Me</h2>
+        <p className="text-sm text-center font-light">
+          Hello there! I'm an aspiring web developer with a boundless ambition
+          to learn and grow in the field. While I may lack experience, my
+          determination to become a respected and skilled web developer is
+          unwavering. My journey into web development is fueled by a genuine
+          passion for coding and a strong desire to create captivating online
+          experiences. I understand that the road ahead is challenging, with
+          ever-evolving technologies, but I'm ready to embrace the learning
+          curve. I see every obstacle as an opportunity for growth and am
+          committed to acquiring the necessary skills and staying updated with
+          the latest trends. My ambition and dedication are my driving forces,
+          propelling me towards my goal of becoming an accomplished web
+          developer. In summary, as a newcomer in web development, my ambition
+          and eagerness to learn are my strengths. I'm determined to make my
+          mark and am excited about the journey ahead.
+        </p>
+      </section>
+
+      <section className="grid grid-cols-1 md:grid-cols-2">
+        <div className=" p-5">
+          <h2 className="text-center font-light text-2xl my-5">Resume</h2>
           <embed
+            className="rounded-md"
             src="/resume.pdf"
             type="application/pdf"
             width="100%"
-            height="100%"
+            height="500px"
           />
         </div>
-        <div className="col-span-2 row-span-2 col-start-2 row-start-2 bg-blue-400">
-          <FontAwesomeIcon icon={faJs} />
+
+        <div className="col-span-1  p-5">
+          <h2 className="text-center font-light text-2xl my-5">Skills</h2>
+          <ul className="flex flex-wrap justify-center items-center bg-gray-100 rounded-md">
+            {mySkills.map((skill) => (
+              <li
+                key={skill.id}
+                className="text-md font-light m-5 flex flex-col items-center">
+                <FontAwesomeIcon
+                  icon={skill.skillIcon}
+                  className="m-5 h-5 md:h-10"
+                />
+                {skill.skillName}
+              </li>
+            ))}
+          </ul>
         </div>
-      </div>
+      </section>
+
+      <section className="p-5 bg-red-600 text-center">
+        <h2 className="text-center font-light text-2xl my-5">Projects</h2>
+
+        {/* Add your projects content here */}
+      </section>
     </div>
   );
 }
