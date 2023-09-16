@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faJs } from "@fortawesome/free-brands-svg-icons";
+
 /* eslint-disable react/no-unescaped-entities */
 export default function Home() {
   return (
@@ -34,7 +37,7 @@ export default function Home() {
           />
         </div>
         <div className="col-span-2 row-span-2 col-start-2 row-start-2 bg-blue-400">
-          Skills
+          <FontAwesomeIcon icon={faJs} />
         </div>
       </div>
     </div>
