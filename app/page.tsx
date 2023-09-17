@@ -1,14 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import mySkills from "@/skills";
+import mySkills from "@/data/skills";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Home() {
   return (
     <div>
-      <section className="p-5 bg-gray-100">
-        <h2 className="text-center font-light text-2xl my-10">About Me</h2>
-        <p className="text-sm text-center font-light">
+      <section className=" m-10">
+        <h2 className="text-center font-light text-2xl my-5">About Me</h2>
+        <p className="text-sm text-center font-light bg-gray-200 rounded-md p-7">
           Hello there! I'm an aspiring web developer with a boundless ambition
           to learn and grow in the field. While I may lack experience, my
           determination to become a respected and skilled web developer is
@@ -27,20 +27,9 @@ export default function Home() {
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-2">
-        <div className=" p-5">
-          <h2 className="text-center font-light text-2xl my-5">Resume</h2>
-          <embed
-            className="rounded-md"
-            src="/resume.pdf"
-            type="application/pdf"
-            width="100%"
-            height="500px"
-          />
-        </div>
-
         <div className="col-span-1  p-5">
           <h2 className="text-center font-light text-2xl my-5">Skills</h2>
-          <ul className="flex flex-wrap justify-center items-center bg-gray-100 rounded-md">
+          <ul className="flex flex-wrap justify-center items-center bg-gray-200 rounded-md hover:shadow-black hover:shadow-2xl">
             {mySkills.map((skill) => (
               <li
                 key={skill.id}
@@ -53,6 +42,16 @@ export default function Home() {
               </li>
             ))}
           </ul>
+        </div>
+        <div className=" p-5">
+          <h2 className="text-center font-light text-2xl my-5">Resume</h2>
+          <embed
+            className="rounded-md hover:shadow-black hover:shadow-2xl"
+            src="/resume.pdf"
+            type="application/pdf"
+            width="100%"
+            height="500px"
+          />
         </div>
       </section>
 
