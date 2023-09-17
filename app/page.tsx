@@ -60,7 +60,7 @@ export default function Home() {
       <section className="p-5 bg-red-600 text-center">
         <h2 className="text-center font-light text-2xl my-5">Projects</h2>
 
-        {myProjects.map((project: Project) => (
+        {myProjects.map((project) => (
           <ProjectCard
             key={project.id}
             projectUrl={project.projectUrl}
