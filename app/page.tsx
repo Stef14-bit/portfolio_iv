@@ -1,7 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import mySkills from "@/data/skills";
+import myProjects from "@/data/projects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ProjectCard from "./components/ProjectCard";
 
 export default function Home() {
   return (
@@ -58,7 +60,15 @@ export default function Home() {
       <section className="p-5 bg-red-600 text-center">
         <h2 className="text-center font-light text-2xl my-5">Projects</h2>
 
-        {/* Add your projects content here */}
+        {myProjects.map((project: Project) => (
+          <ProjectCard
+            key={project.id}
+            projectUrl={project.projectUrl}
+            gitUrl={project.gitUrl}
+            projectName={project.projectName}
+            projectDescription={project.projectDescription}
+          />
+        ))}
       </section>
     </div>
   );

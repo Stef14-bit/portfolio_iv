@@ -56,3 +56,5 @@ const myProjects: Project[] = [
     gitUrl: "https://github.com/Stef14-bit/backend-groceries_delivery",
   },
 ];
+
+export default myProjects;
