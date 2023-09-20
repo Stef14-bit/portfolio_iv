@@ -9,19 +9,22 @@ type Props = {
 
 const ProjectCard = (props: Props) => {
   return (
-    <div>
-      <iframe
-        src={props.projectUrl}
-        frameBorder="0"
-        title={props.projectName}></iframe>
+    <div className="flex flex-col justify-center content-around border-2 rounded-md border-slate-400 m-5 p-5 ">
+      <iframe src={props.projectUrl} title={props.projectName}></iframe>
       <h2>{props.projectName}</h2>
       <p>{props.projectDescription}</p>
-      <a href={props.projectUrl}>
-        <button>Visite website</button>
-      </a>
-      <a href={props.gitUrl}>
-        <button>Visit GitHub</button>
-      </a>
+      <div className=" my-5 h-10 flex  items-center justify-around rounded-md font-light text-xs md:text-lg">
+        <a
+          className="bg-green-500 h-full w-full flex items-center justify-center rounded-l-md hover:opacity-50 hover:shadow-lg hover:shadow-black "
+          href={props.projectUrl}>
+          Visit website
+        </a>
+        <a
+          className="bg-blue-500 h-full w-full flex items-center justify-center rounded-r-md"
+          href={props.gitUrl}>
+          Visit GitHub
+        </a>
+      </div>
     </div>
   );
 };

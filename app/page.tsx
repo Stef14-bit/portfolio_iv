@@ -57,7 +57,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="p-5 bg-red-600 text-center">
+      <section className="p-5 text-center">
         <h2 className="text-center font-light text-2xl my-5">Projects</h2>
 
         {myProjects.map((project) => (
