@@ -9,10 +9,10 @@ type Props = {
 
 const ProjectCard = (props: Props) => {
   return (
-    <div className="flex flex-col justify-center content-around border-2 rounded-md border-slate-400 m-5 p-5 hover:shadow-black hover:shadow-2xl">
+    <div className="flex flex-col justify-center content-around rounded-md  m-10 p-5 shadow-black shadow-2xl">
       <iframe src={props.projectUrl} title={props.projectName}></iframe>
-      <h2>{props.projectName}</h2>
-      <p>{props.projectDescription}</p>
+      <h2 className="py-5 font-light text-2xl">{props.projectName}</h2>
+      <p className="font-light text-sm">{props.projectDescription}</p>
       <div className=" my-5 h-10 flex  items-center justify-around rounded-md font-light text-xs md:text-lg">
         <a
           className="bg-green-500 h-full w-full flex items-center justify-center rounded-l-md  hover:shadow-md hover:shadow-black"

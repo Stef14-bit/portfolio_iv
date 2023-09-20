@@ -31,7 +31,7 @@ export default function Home() {
       <section className="grid grid-cols-1 md:grid-cols-2">
         <div className="col-span-1  p-5">
           <h2 className="text-center font-light text-2xl my-5">Skills</h2>
-          <ul className="flex flex-wrap justify-center items-center bg-gray-200 rounded-md hover:shadow-black hover:shadow-2xl">
+          <ul className="flex flex-wrap justify-center items-center bg-gray-200 rounded-md shadow-black shadow-2xl">
             {mySkills.map((skill) => (
               <li
                 key={skill.id}
@@ -48,7 +48,7 @@ export default function Home() {
         <div className=" p-5">
           <h2 className="text-center font-light text-2xl my-5">Resume</h2>
           <embed
-            className="rounded-md hover:shadow-black hover:shadow-2xl"
+            className="rounded-md shadow-black shadow-2xl"
             src="/resume.pdf"
             type="application/pdf"
             width="100%"
