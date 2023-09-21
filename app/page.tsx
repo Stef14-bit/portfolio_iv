@@ -8,7 +8,7 @@ import ProjectCard from "./components/ProjectCard";
 export default function Home() {
   return (
     <div>
-      <section className=" m-10">
+      <section id="top" className=" m-10">
         <h2 className="text-center font-light text-2xl my-5">About Me</h2>
         <p className="text-sm text-center font-light bg-gray-200 rounded-md p-7">
           Hello there! I'm an aspiring web developer with a boundless ambition
@@ -28,7 +28,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-2">
+      <section id="skills" className="grid grid-cols-1 md:grid-cols-2">
         <div className="col-span-1  p-5">
           <h2 className="text-center font-light text-2xl my-5">Skills</h2>
           <ul className="flex flex-wrap justify-center items-center bg-gray-200 rounded-md shadow-black shadow-2xl">
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="p-5 text-center">
+      <section id="projects" className="p-5 text-center">
         <h2 className="text-center font-light text-2xl my-5">Projects</h2>
         <div className="flex flex-wrap justify-center">
           {myProjects.map((project) => (
