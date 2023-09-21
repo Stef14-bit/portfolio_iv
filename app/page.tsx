@@ -47,28 +47,28 @@ export default function Home() {
         </div>
         <div className=" p-5">
           <h2 className="text-center font-light text-2xl my-5">Resume</h2>
-          <embed
+          <iframe
             className="rounded-md shadow-black shadow-2xl"
             src="/resume.pdf"
-            type="application/pdf"
             width="100%"
-            height="500px"
+            height="550"
           />
         </div>
       </section>
 
       <section className="p-5 text-center">
         <h2 className="text-center font-light text-2xl my-5">Projects</h2>
-
-        {myProjects.map((project) => (
-          <ProjectCard
-            key={project.id}
-            projectUrl={project.projectUrl}
-            gitUrl={project.gitUrl}
-            projectName={project.projectName}
-            projectDescription={project.projectDescription}
-          />
-        ))}
+        <div className="flex flex-wrap justify-center">
+          {myProjects.map((project) => (
+            <ProjectCard
+              key={project.id}
+              projectUrl={project.projectUrl}
+              gitUrl={project.gitUrl}
+              projectName={project.projectName}
+              projectDescription={project.projectDescription}
+            />
+          ))}
+        </div>
       </section>
     </div>
   );
