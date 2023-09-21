@@ -8,7 +8,7 @@ const Footer = (props: Props) => {
       <p className="p-1 font-light">Stefan Ivanus</p>
       <p className="p-1 font-light">Zürich 2023</p>
       <a className="p-1 font-light" href="#">
-        Contact
+        Contact me
       </a>
     </div>
   );
