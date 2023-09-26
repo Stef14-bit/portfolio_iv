@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+import contact from "../contact";
 
 type Props = {};
 
@@ -7,9 +9,9 @@ const Footer = (props: Props) => {
     <div className="bg-blue-300 text-center p-5">
       <p className="p-1 font-light">Stefan Ivanus</p>
       <p className="p-1 font-light">Zürich 2023</p>
-      <a className="p-1 font-light" href="#">
+      <Link className="p-1 font-light" href={contact}>
         Contact me
-      </a>
+      </Link>
     </div>
   );
 };
