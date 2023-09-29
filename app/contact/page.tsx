@@ -11,10 +11,10 @@ export const ContactUs = () => {
     if (form.current) {
       emailjs
         .sendForm(
-          "YOUR_SERVICE_ID",
-          "YOUR_TEMPLATE_ID",
+          "service_ibklexa",
+          "template_t0nuw7q",
           form.current,
-          "YOUR_PUBLIC_KEY"
+          "oima6GjDFnvBEc6bQ"
         )
         .then(
           (result: EmailJSResponseStatus) => {
