@@ -6,6 +6,9 @@ const Navbar = (props: Props) => {
   return (
     <div className="bg-blue-300 w-full  flex items-center p-5">
       <ul className="w-full flex flex-row justify-around items-center">
+        <a href="/">
+          <li>Home</li>
+        </a>
         <a href="#skills">
           <li>Skills</li>
         </a>
@@ -13,6 +16,7 @@ const Navbar = (props: Props) => {
         <a href="#projects">
           <li>Projects</li>
         </a>
+        <a href="../contact">Contact me</a>
       </ul>
     </div>
   );
