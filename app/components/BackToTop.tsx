@@ -6,11 +6,11 @@ type Props = {};
 
 function BackToTop({}: Props) {
   return (
-    <div className="h-14 w-14 p-4 rounded-full bg-green-500 opacity-50 hover:opacity-100 fixed bottom-5 right-2">
-      <a href="#">
-        <FontAwesomeIcon icon={faArrowsUpToLine} />
-      </a>
-    </div>
+    <a
+      href="#"
+      className="h-14 w-14 p-4 rounded-full bg-green-500 opacity-50 hover:opacity-100 fixed bottom-5 right-2">
+      <FontAwesomeIcon className="text-white" icon={faArrowsUpToLine} />
+    </a>
   );
 }
 
