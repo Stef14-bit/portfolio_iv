@@ -5,15 +5,18 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <div className="bg-blue-300 w-full  flex items-center p-5">
-      <ul className="w-full flex flex-row justify-around items-center">
+    <nav className="bg-blue-300 w-full  flex items-center">
+      <ul className="w-full flex flex-row justify-around items-center h-16 p-5">
         {navLinks.map((e) => (
-          <a key={e.id} href={e.href}>
-            <li>{e.name}</li>
+          <a
+            className="hover:text-lg transition hover:text-slate-600  hover:ease-in-out delay-150"
+            key={e.id}
+            href={e.href}>
+            <li className="w-28">{e.name}</li>
           </a>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 };
 
