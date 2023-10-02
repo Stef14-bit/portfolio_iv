@@ -38,7 +38,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center p-10">
+    <div className="flex justify-center p-10socket">
       {isSubmitted ? (
         <div className="text-green-600 text-center font-light text-xl">
           Thank you for your message! We will get back to you soon.
