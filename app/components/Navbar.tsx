@@ -9,7 +9,7 @@ const Navbar = (props: Props) => {
       <ul className="w-full flex flex-row justify-around items-center h-16 p-5">
         {navLinks.map((e) => (
           <a
-            className="hover:text-lg transition hover:text-slate-600  hover:ease-in-out delay-150"
+            className="hover:text-lg  hover:text-slate-600 ease-in-out duration-300 hover:underline"
             key={e.id}
             href={e.href}>
             <li className="w-28">{e.name}</li>
