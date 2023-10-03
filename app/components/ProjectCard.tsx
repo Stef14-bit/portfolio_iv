@@ -15,13 +15,13 @@ const ProjectCard = (props: Props) => {
       <p className="font-light text-sm">{props.projectDescription}</p>
       <div className=" my-5 h-10 flex  items-center justify-around rounded-md font-light text-xs md:text-lg">
         <a
-          className="bg-green-500 h-full w-full flex items-center justify-center rounded-l-md  hover:shadow-md hover:shadow-black"
+          className="bg-green-300 h-full w-full flex items-center justify-center rounded-l-md  hover:shadow-md hover:shadow-black"
           href={props.projectUrl}
           target="_blank">
           Visit website
         </a>
         <a
-          className="bg-blue-500 h-full w-full flex items-center justify-center rounded-r-md hover:shadow-md hover:shadow-black"
+          className="bg-blue-300 h-full w-full flex items-center justify-center rounded-r-md hover:shadow-md hover:shadow-black"
           href={props.gitUrl}
           target="_blank">
           Visit GitHub
