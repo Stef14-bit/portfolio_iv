@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <section id="top" className=" m-10">
         <h2 className="text-center font-light text-2xl my-5">About Me</h2>
-        <p className="text-sm text-center font-light bg-gray-200 rounded-md p-7">
+        <p className="text-sm text-center font-light bg-blue-50 rounded-md p-7">
           Hello there! I'm an aspiring web developer with a boundless ambition
           to learn and grow in the field. While I may lack experience, my
           determination to become a respected and skilled web developer is
@@ -31,7 +31,7 @@ export default function Home() {
       <section id="skills" className="grid grid-cols-1 md:grid-cols-2">
         <div className="col-span-1  p-5">
           <h2 className="text-center font-light text-2xl my-5">Skills</h2>
-          <ul className="flex flex-wrap justify-center items-center bg-gray-200 rounded-md shadow-black shadow-2xl">
+          <ul className="flex flex-wrap justify-center items-center bg-blue-50 rounded-md shadow-black shadow-md">
             {mySkills.map((skill) => (
               <li
                 key={skill.id}
@@ -48,7 +48,7 @@ export default function Home() {
         <div className=" p-5">
           <h2 className="text-center font-light text-2xl my-5">Resume</h2>
           <iframe
-            className="rounded-md shadow-black shadow-2xl"
+            className="rounded-md shadow-black shadow-md"
             src="/resume.pdf"
             width="100%"
             height="550"
