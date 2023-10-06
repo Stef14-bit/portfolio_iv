@@ -38,7 +38,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center p-10socket">
+    <div className="flex justify-center p-10">
       {isSubmitted ? (
         <div className="text-green-600 text-center font-light text-xl">
           Thank you for your message! We will get back to you soon.
@@ -52,7 +52,7 @@ const ContactForm: React.FC = () => {
               Name:
             </label>
             <input
-              className="rounded-md p-2 m-2"
+              className="rounded-md p-2 m-2 border-2"
               type="text"
               id="name"
               value={name}
@@ -65,7 +65,7 @@ const ContactForm: React.FC = () => {
               Email:
             </label>
             <input
-              className="rounded-md p-2 m-2"
+              className="rounded-md p-2 m-2 border-2"
               type="email"
               id="email"
               value={email}
@@ -78,7 +78,7 @@ const ContactForm: React.FC = () => {
               Message:
             </label>
             <textarea
-              className="rounded-md p-2 m-2"
+              className="rounded-md p-2 m-2 border-2"
               id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
