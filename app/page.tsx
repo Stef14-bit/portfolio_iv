@@ -27,7 +27,7 @@ export default function Home() {
         id="skills"
         className="grid grid-cols-1 md:grid-cols-2 text-slate-500 align-middle justify-center">
         <div className="col-span-1  p-5">
-          <h2 className="text-center font-light text-2xl my-5">Skills</h2>
+          <h2 className="text-center font-light text-2xl my-20">Skills</h2>
           <ul className="flex flex-wrap justify-center items-center  shadow-black shadow-md">
             {mySkills.map((skill) => (
               <li
