@@ -8,11 +8,13 @@ import ProjectCard from "./components/ProjectCard";
 export default function Home() {
   return (
     <div>
-      <section id="top" className="py-10 m-10">
+      <section
+        id="top"
+        className="py-10 m-10 flex flex-col justify-center items-center">
         <h2 className="text-center font-light text-3xl my-5 text-slate-500">
           About Me
         </h2>
-        <p className="text-m text-center font-extralight md:p-20 p-7">
+        <p className="text-m font-extralight text-center w-2/3 p-7 ">
           Hello! I'm an ambitious web developer with a genuine passion for
           coding and creating captivating online experiences. I'm determined to
           overcome challenges, stay updated with the latest trends, and become
@@ -52,7 +54,7 @@ export default function Home() {
       </section>
 
       <section id="projects" className="p-5 text-center text-slate-500">
-        <h2 className="text-center font-light text-3xl my-5 p-20">Projects</h2>
+        <h2 className="text-center font-light text-3xl my-20">Projects</h2>
         <div className="flex flex-wrap justify-center">
           {myProjects.map((project) => (
             <ProjectCard
