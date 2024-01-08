@@ -8,11 +8,13 @@ import ProjectCard from "./components/ProjectCard";
 export default function Home() {
   return (
     <div>
-      <section id="top" className="py-10 m-10">
+      <section
+        id="top"
+        className="py-10 m-10 flex flex-col justify-center items-center">
         <h2 className="text-center font-light text-3xl my-5 text-slate-500">
           About Me
         </h2>
-        <p className="text-m text-center font-extralight md:p-20 p-7">
+        <p className="text-m font-extralight text-center w-2/3 p-7 ">
           Hello! I'm an ambitious web developer with a genuine passion for
           coding and creating captivating online experiences. I'm determined to
           overcome challenges, stay updated with the latest trends, and become
@@ -24,8 +26,8 @@ export default function Home() {
       <section
         id="skills"
         className="grid grid-cols-1 md:grid-cols-2 text-slate-500 align-middle justify-center">
-        <div className="col-span-1  p-5">
-          <h2 className="text-center font-light text-2xl my-5">Skills</h2>
+        <div className="p-5">
+          <h2 className="text-center font-light text-2xl my-20">Skills</h2>
           <ul className="flex flex-wrap justify-center items-center  shadow-black shadow-md">
             {mySkills.map((skill) => (
               <li
@@ -40,19 +42,19 @@ export default function Home() {
             ))}
           </ul>
         </div>
-        <div className=" p-5">
-          <h2 className="text-center font-light text-2xl my-5">Resume</h2>
+        <div className="p-5 overflow-hidden">
+          <h2 className="text-center font-light text-2xl m-20">Resume</h2>
           <iframe
             className="rounded-md shadow-black shadow-md"
             src="/resume.pdf"
             width="100%"
-            height="550"
+            height="100%"
           />
         </div>
       </section>
 
       <section id="projects" className="p-5 text-center text-slate-500">
-        <h2 className="text-center font-light text-3xl my-5 p-20">Projects</h2>
+        <h2 className="text-center font-light text-3xl my-20">Projects</h2>
         <div className="flex flex-wrap justify-center">
           {myProjects.map((project) => (
             <ProjectCard
