@@ -8,9 +8,11 @@ import ProjectCard from "./components/ProjectCard";
 export default function Home() {
   return (
     <div>
-      <section id="top" className=" m-10">
-        <h2 className="text-center font-light text-2xl my-5">About Me</h2>
-        <p className="text-sm text-center font-light  p-7">
+      <section id="top" className="py-10 m-10">
+        <h2 className="text-center font-light text-3xl my-5 text-slate-500">
+          About Me
+        </h2>
+        <p className="text-m text-center font-extralight md:p-20 p-7">
           Hello! I'm an ambitious web developer with a genuine passion for
           coding and creating captivating online experiences. I'm determined to
           overcome challenges, stay updated with the latest trends, and become
@@ -19,7 +21,9 @@ export default function Home() {
         </p>
       </section>
 
-      <section id="skills" className="grid grid-cols-1 md:grid-cols-2">
+      <section
+        id="skills"
+        className="grid grid-cols-1 md:grid-cols-2 text-slate-500 align-middle justify-center">
         <div className="col-span-1  p-5">
           <h2 className="text-center font-light text-2xl my-5">Skills</h2>
           <ul className="flex flex-wrap justify-center items-center  shadow-black shadow-md">
@@ -47,8 +51,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="p-5 text-center">
-        <h2 className="text-center font-light text-2xl my-5">Projects</h2>
+      <section id="projects" className="p-5 text-center text-slate-500">
+        <h2 className="text-center font-light text-3xl my-5 p-20">Projects</h2>
         <div className="flex flex-wrap justify-center">
           {myProjects.map((project) => (
             <ProjectCard

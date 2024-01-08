@@ -55,14 +55,6 @@ const myProjects: Project[] = [
     projectUrl: "https://github.com/Stef14-bit/backend-groceries_delivery",
     gitUrl: "https://github.com/Stef14-bit/backend-groceries_delivery",
   },
-  {
-    id: 7,
-    projectName: "Space News scraper API",
-    projectDescription:
-      " I used Express in conjunction with various npm packages to develop a news scraper API that collects news articles containing specific tags from preselected websites.",
-    projectUrl: "https://news-space.p.rapidapi.com/",
-    gitUrl: "https://github.com/Stef14-bit/News-API",
-  },
 ];
 
 export default myProjects;
