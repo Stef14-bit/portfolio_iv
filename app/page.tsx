@@ -26,7 +26,7 @@ export default function Home() {
       <section
         id="skills"
         className="grid grid-cols-1 md:grid-cols-2 text-slate-500 align-middle justify-center">
-        <div className="col-span-1  p-5">
+        <div className="p-5">
           <h2 className="text-center font-light text-2xl my-20">Skills</h2>
           <ul className="flex flex-wrap justify-center items-center  shadow-black shadow-md">
             {mySkills.map((skill) => (
@@ -42,13 +42,13 @@ export default function Home() {
             ))}
           </ul>
         </div>
-        <div className=" p-5">
-          <h2 className="text-center font-light text-2xl my-5">Resume</h2>
+        <div className="p-5 overflow-hidden">
+          <h2 className="text-center font-light text-2xl m-20">Resume</h2>
           <iframe
             className="rounded-md shadow-black shadow-md"
             src="/resume.pdf"
             width="100%"
-            height="550"
+            height="100%"
           />
         </div>
       </section>
