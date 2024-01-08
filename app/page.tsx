@@ -25,8 +25,8 @@ export default function Home() {
 
       <section
         id="skills"
-        className="grid grid-cols-1 md:grid-cols-2 text-slate-500 align-middle justify-center">
-        <div className="p-5">
+        className="flex flex-col md:flex-row text-slate-500 items-center justify-center">
+        <div className="p-5 md:w-1/2">
           <h2 className="text-center font-light text-2xl my-20">Skills</h2>
           <ul className="flex flex-wrap justify-center items-center  shadow-black shadow-md">
             {mySkills.map((skill) => (
@@ -42,18 +42,20 @@ export default function Home() {
             ))}
           </ul>
         </div>
-        <div className="p-5 overflow-hidden">
-          <h2 className="text-center font-light text-2xl m-20">Resume</h2>
+        <div className="md:p-5 md:w-1/2">
+          <h2 className="text-center font-light text-2xl m-20 h-full">
+            Resume
+          </h2>
           <iframe
             className="rounded-md shadow-black shadow-md"
             src="/resume.pdf"
             width="100%"
-            height="100%"
+            height="500"
           />
         </div>
       </section>
 
-      <section id="projects" className="p-5 text-center text-slate-500">
+      <section id="projects" className="md:p-5 text-center text-slate-500">
         <h2 className="text-center font-light text-3xl my-20">Projects</h2>
         <div className="flex flex-wrap justify-center">
           {myProjects.map((project) => (
