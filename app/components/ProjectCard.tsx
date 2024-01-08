@@ -9,7 +9,7 @@ type Props = {
 
 const ProjectCard = (props: Props) => {
   return (
-    <div className=" bg-blue-50 flex flex-col justify-center content-between rounded-md  m-10 p-5 shadow-black shadow-md max-w-sm">
+    <div className="border-2 flex flex-col justify-center content-between rounded-md  m-10 p-5  max-w-sm">
       <iframe src={props.projectUrl} title={props.projectName}></iframe>
       <h2 className="py-5 font-light text-2xl">{props.projectName}</h2>
       <p className="font-light text-sm">{props.projectDescription}</p>
