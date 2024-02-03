@@ -4,7 +4,7 @@ const navLinks: Links[] = [
   { id: 1, href: "/", name: "Home" },
   { id: 2, href: "/#skills", name: "Skills" },
   { id: 3, href: "/#projects", name: "Projects" },
-  { id: 4, href: "../contact", name: "Contact me" },
+  { id: 4, href: "mailto:stefan.ivanus@outlook.de", name: "Contact me" },
 ];
 
 export default navLinks;
